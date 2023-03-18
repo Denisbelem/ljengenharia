@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabeça {
+  display: grid;
+  max-width: 1300px;
+  width: 1225px;
+  height: 215px;
+  margin: auto;
+}
+
+:root {
+  --cor1: #060afa;
+  --cor2: #1154cf;
+  --cor3: #239fe7;
+  --cor4: #0fc3f0;
+  --cor5: #16160e;
+  --cor6: #bbbbd8;
+  --cor7: #469b61;
+  --cor8: #2295c2;
+  --cor9: #1b4855;
+  --cor10: #3b3c3e;
+}
+
+.container {
+  background-image: url("../img/Plano\ de\ fundo\ Zoom\ 1920x1080\ \ px..png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  border-width: 5px;
+  border-style: ridge;
+  Border-color: #100792;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+
+  display: flex;
+  width: 200px;
+  height: 180px;
+  justify-content: center;
+  border-width: 5px;
+  border-style: ridge;
+  Border-color: #100792;
+
+}
+
+/* hamburger */
+.checkbox {
+  display: none;
+}
+
+.button {
+  position: relative;
+  background-color: white;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 5.5vh;
+  right: 5.5vw;
+  background-image: radial-gradient(green, black);
+  z-index: 1000;
+
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+
+.nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -60vw;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s;
+}
+
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.item {
+  margin: 1rem;
+  font-size: 36px;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%);
+  background-size: 220%;
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:active {
+  color: lightgreen;
+  cursor: pointer;
+}
+
+/* functionality */
+.checkbox:checked~.background {
+  transform: scale(80);
+}
+
+.checkbox:checked~.nav {
+  opacity: 1;
+  width: 100%;
+  right: 0;
+}
+
+/*  */
+/* styling hamb ICON */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: gray;
+  display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.icon::before {
+  top: -0.8rem;
+}
+
+.icon::after {
+  top: 0.8rem;
+}
+
+.button:hover icon:before {
+  top: -1rem;
+}
+
+.button:hover icon::after {
+  top: 1rem;
+}
+
+.checkbox:checked+.button .icon {
+  background-color: transparent;
+}
+
+.checkbox:checked+.button .icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.checkbox:checked+.button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+
+.empresa {
+  padding-right: 15%;
+  width: 75%;
+  position: relative;
+  justify-content: right;
+  margin: 1%;
+  color: rgb(244, 247, 95);
+  font-size: 2em;
+  font-family: stencil, fantasy;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:
+    1px -1px 0 #2f5d87,
+    2px -2px 0 #2e5a83,
+    3px -3px 0 #2d5880,
+    4px -4px 0 #2b557c,
+    5px -5px 0 #2a5378,
+    6px -6px 0 #295074,
+    7px -7px 0 #274d71,
+    8px -8px 0 #264b6d,
+    9px -9px 0 #254869,
+    10px -10px 0 #234665,
+    11px -11px 0 #224361,
+    12px -12px 0 #21405e,
+    13px -13px 12px rgba(0, 0, 0, 0.55),
+    13px -13px 1px rgba(0, 0, 0, 0.5);
+}
+
+.conteiner-conteudo {
+  color: #eaeaec;
+  text-shadow: 4px -2px 1px rgba(0, 0, 0, 0.5);
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+}
+
+.conteudo-texto {
+  justify-content: space-around; // column
+  margin: 5px;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 1em;
+
+}
+
+.titulo1 {
+  color: #1616f2;
+  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  background-position: center;
+  border-width: 8px;
+  border-style: dashed;
+  Border-color: #100792;
+
+}
+
+.titulo2 {
+  color: #1616f2;
+  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  border-width: 8px;
+  border-style: dashed;
+  Border-color: #100792;
+}
+
+.titulo3 {
+  color: #1616f2;
+  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  border-width: 8px;
+  border-style: dashed;
+  Border-color: #100792;
+}
+
+.titulo4 {
+  color: #1616f2;
+  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  border-width: 8px;
+  border-style: dashed;
+  Border-color: #100792;
+}
+
+.rodape {
+  height: 300px;
+  display: grid;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  justify-content: center;
+}
+
+.textogps {
+  justify-content: center;
+}
+
+.gps {
+  width: 400px;
+  height: 250px;
+  justify-content: center;
+}
+
+.menurodape {
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 25px;
+}
+
+
+/*
+1 Pra dispositivos que têm uma largura mínima de 969 pixels.
+10 Tablets, por exemplo.
+ */
+@media(max-width: 969px) {
+  .empresa {
+    padding-right: 30%;
+    width: 75%;
+    position: relative;
+    justify-content: right;
+    margin: 1%;
+    color: rgb(222, 241, 18);
+    font-size: 20px;
+    text-align: center;
+    text-shadow: none;
+  }
+}
+
+/*
+2 Pra dispositivos que têm uma largura mínima de 1000 pixels.
+10 Tablets, por exemplo.
+ */
+@media(max-width: 500px) {
+  .empresa {
+    padding-right: 30%;
+    width: 75%;
+    position: relative;
+    margin: 1%;
+    color: red;
+    font-size: 10px;
+    font-family: stencil, fantasy;
+    font-weight: bold;
+    text-align: center;
+  }
+}
