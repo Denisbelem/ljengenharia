@@ -293,6 +293,9 @@
 }
 
 .textogps {
+  padding-top: 1%;
+  font-size:1.0em; 
+  color: rgb(249, 252, 251);
   justify-content: center;
 }
 
@@ -303,11 +306,18 @@
 }
 
 .menurodape {
+  color: azure;
   list-style: none;
   display:flex;
   justify-content: space-between;
   width: 400px;
   height: 25px;
+}
+/* paple de parede*/
+.todorodape{
+  background-image:url("../img/Plano\ de\ fundo2\ Zoom\ 1920x1080\ \ px..png");
+  background-size: cover;
+  background-position: 25% 80%;
 }
 
 
