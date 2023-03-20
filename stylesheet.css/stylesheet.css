@@ -393,7 +393,7 @@
 2 Pra dispositivos que têm uma largura mínima de 1000 pixels.
 10 Tablets, por exemplo.
  */
-@media(max-width: 300px) {
+@media(max-width: 450px){
 
   .container {
     padding-right: 2%s;
@@ -409,7 +409,6 @@
   }
 
   .logo {
-    padding-right: 1%;
     display: flex;
     width: 80px;
     height: 75px;
@@ -436,27 +435,16 @@
     position: relative;
     justify-content: right;
     margin: 1%;
-    color: rgb(33, 184, 101);
+    color: rgb(68, 182, 23);
     font-size: 20px;
     text-align: center;
     text-shadow: none;
   }
 
   .gps {
-    width: 200px;
+    width: 100px;
     height: 100px;
     justify-content: center;
   }
-}
-  .empresa {
-    padding-right: 15%;
-    width: 75%;
-    position: relative;
-    margin: 1%;
-    color: red;
-    font-size: 10px;
-    font-family: stencil, fantasy;
-    font-weight: bold;
-    text-align: center;
-  }
+
 }
