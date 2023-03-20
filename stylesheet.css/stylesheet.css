@@ -26,7 +26,7 @@
 }
 
 .container {
-  background-image:url("../img/plano\ de\ fundo\ mobile.png");
+  background-image: url("../img/plano\ de\ fundo\ mobile.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -339,7 +339,7 @@
   .container {
     padding-right: 2%s;
     background-image:
-    background-size: cover;
+      background-size: cover;
     background-position: center;
     display: flex;
     border-width: 5px;
@@ -390,15 +390,15 @@
 }
 
 /*
-2 Pra dispositivos que têm uma largura mínima de 1000 pixels.
+2 Pra dispositivos que têm uma largura mínima de 450px pixels.
 10 Tablets, por exemplo.
  */
-@media(max-width: 450px){
+@media(max-width: 450px) {
 
   .container {
     padding-right: 2%s;
     background-image:
-    background-size: cover;
+      background-size: cover;
     background-position: center;
     display: flex;
     border-width: 5px;
@@ -411,7 +411,7 @@
   .logo {
     display: flex;
     width: 80px;
-    height: 75px;
+    height: 90px;
     justify-content: center;
     border-width: 5px;
     border-style: ridge;
@@ -435,7 +435,7 @@
     position: relative;
     justify-content: right;
     margin: 1%;
-    color: rgb(68, 182, 23);
+    color: rgb(234, 238, 29);
     font-size: 20px;
     text-align: center;
     text-shadow: none;
@@ -447,4 +447,12 @@
     justify-content: center;
   }
 
+  .menurodape {
+    color: azure;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 25px;
+  }
 }
