@@ -151,7 +151,6 @@
   right: 0;
 }
 
-/*  */
 /* styling hamb ICON */
 .icon {
   position: absolute;
@@ -394,9 +393,63 @@
 2 Pra dispositivos que têm uma largura mínima de 1000 pixels.
 10 Tablets, por exemplo.
  */
-@media(max-width: 500px) {
+@media(max-width: 300px) {
+
+  .container {
+    padding-right: 2%s;
+    background-image:
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    border-width: 5px;
+    border-style: ridge;
+    Border-color: #100792;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    padding-right: 1%;
+    display: flex;
+    width: 80px;
+    height: 75px;
+    justify-content: center;
+    border-width: 5px;
+    border-style: ridge;
+    Border-color: #100792;
+
+  }
+
+  .logo-pc {
+    display: none;
+  }
+
+  .logo-mb {
+    display: flex;
+    width: 100%;
+  }
+
+
   .empresa {
-    padding-right: 30%;
+    padding-right: 5%;
+    width: 75%;
+    position: relative;
+    justify-content: right;
+    margin: 1%;
+    color: rgb(33, 184, 101);
+    font-size: 20px;
+    text-align: center;
+    text-shadow: none;
+  }
+
+  .gps {
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+  }
+}
+  .empresa {
+    padding-right: 15%;
     width: 75%;
     position: relative;
     margin: 1%;
