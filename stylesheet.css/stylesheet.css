@@ -26,7 +26,7 @@
 }
 
 .container {
-  background-image: url("../img/Plano\ de\ fundo\ Zoom\ 1920x1080\ \ px..png");
+  background-image:
   background-size: cover;
   background-position: center;
   display: flex;
@@ -46,6 +46,15 @@
   border-style: ridge;
   Border-color: #100792;
 
+}
+
+.logo-pc {
+  width: 100%;
+  display: flex;
+}
+
+.logo-mb {
+  display: none;
 }
 
 /* hamburger */
@@ -236,12 +245,12 @@
   justify-content: flex-start;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-between;
-  background: rgb(27,31,231);
-  background: linear-gradient(90deg, rgba(27,31,231,1) 0%, rgba(190,242,42,1) 66%); 
+  background: rgb(27, 31, 231);
+  background: linear-gradient(90deg, rgba(27, 31, 231, 1) 0%, rgba(190, 242, 42, 1) 66%);
 }
 
 .conteudo-texto {
-  justify-content: space-around; 
+  justify-content: space-around;
   margin: 5px;
   padding: 0 10px;
   text-align: center;
@@ -251,8 +260,8 @@
 
 .titulo1 {
   color: #1616f2;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   background-position: center;
   border-width: 8px;
   border-style: double;
@@ -262,7 +271,7 @@
 
 .titulo2 {
   color: #1616f2;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
@@ -270,7 +279,7 @@
 
 .titulo3 {
   color: #1616f2;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
@@ -278,7 +287,7 @@
 
 .titulo4 {
   color: #1616f2;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
@@ -295,7 +304,7 @@
 
 .textogps {
   padding-top: 1%;
-  font-size:1.0em; 
+  font-size: 1.0em;
   color: rgb(249, 252, 251);
   justify-content: center;
 }
@@ -309,34 +318,75 @@
 .menurodape {
   color: azure;
   list-style: none;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   width: 400px;
   height: 25px;
 }
+
 /* papel de parede*/
-.todorodape{
-  background-image:url("../img/Plano\ de\ fundo2\ Zoom\ 1920x1080\ \ px..png");
+.todorodape {
+  background-image: url("../img/Plano\ de\ fundo2\ Zoom\ 1920x1080\ \ px..png");
   background-size: cover;
   background-position: 25% 80%;
 }
 
 
 /*
-1 Pra dispositivos que têm uma largura mínima de 969 pixels.
+1 Pra dispositivos que têm uma largura mínima de 720 pixels.
 10 Tablets, por exemplo.
  */
-@media(max-width: 969px) {
+@media(max-width:720px) {
+  .container {
+    padding-right: 2%s;
+    background-image:
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    border-width: 5px;
+    border-style: ridge;
+    Border-color: #100792;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    width: 130px;
+    height: 140px;
+    justify-content: center;
+    border-width: 5px;
+    border-style: ridge;
+    Border-color: #100792;
+
+  }
+
+  .logo-pc {
+    display: none;
+  }
+
+  .logo-mb {
+    display: flex;
+    width: 100%;
+  }
+
+
   .empresa {
-    padding-right: 30%;
+    padding-right: 10%;
     width: 75%;
     position: relative;
     justify-content: right;
     margin: 1%;
-    color: rgb(222, 241, 18);
+    color: rgb(33, 184, 101);
     font-size: 20px;
     text-align: center;
     text-shadow: none;
+  }
+
+  .gps {
+    width: 200px;
+    height: 100px;
+    justify-content: center;
   }
 }
 
