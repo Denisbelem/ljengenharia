@@ -38,7 +38,6 @@
 }
 
 .logo {
-
   display: flex;
   width: 200px;
   height: 180px;
@@ -229,19 +228,20 @@
 }
 
 .conteiner-conteudo {
-  color: #eaeaec;
-  text-shadow: 4px -2px 1px rgba(0, 0, 0, 0.5);
-  font-size: 3em;
+  color: #01010c;
+  text-shadow: 2px -1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-between;
-  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  background: rgb(27,31,231);
+  background: linear-gradient(90deg, rgba(27,31,231,1) 0%, rgba(190,242,42,1) 66%); 
 }
 
 .conteudo-texto {
-  justify-content: space-around; // column
+  justify-content: space-around; 
   margin: 5px;
   padding: 0 10px;
   text-align: center;
@@ -251,35 +251,36 @@
 
 .titulo1 {
   color: #1616f2;
-  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
   background-position: center;
   border-width: 8px;
-  border-style: dashed;
+  border-style: double;
   Border-color: #100792;
 
 }
 
 .titulo2 {
   color: #1616f2;
-  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
   border-width: 8px;
-  border-style: dashed;
+  border-style: double;
   Border-color: #100792;
 }
 
 .titulo3 {
   color: #1616f2;
-  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
   border-width: 8px;
-  border-style: dashed;
+  border-style: double;
   Border-color: #100792;
 }
 
 .titulo4 {
   color: #1616f2;
-  background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,203,24,0.8323704481792717) 46%);
   border-width: 8px;
-  border-style: dashed;
+  border-style: double;
   Border-color: #100792;
 }
 
@@ -313,7 +314,7 @@
   width: 400px;
   height: 25px;
 }
-/* paple de parede*/
+/* papel de parede*/
 .todorodape{
   background-image:url("../img/Plano\ de\ fundo2\ Zoom\ 1920x1080\ \ px..png");
   background-size: cover;
