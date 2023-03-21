@@ -26,9 +26,9 @@
 }
 
 .container {
-  background-image: url("../img/plano\ de\ fundo\ mobile.png");
+  background-image: url("../img/foto\ header.webp");
   background-size: cover;
-  background-position: center;
+  background-position: 5% 75%;
   display: flex;
   border-width: 5px;
   border-style: ridge;
@@ -258,7 +258,7 @@
 }
 
 .titulo1 {
-  color: #1616f2;
+  color: #010118;
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   background-position: center;
@@ -269,7 +269,7 @@
 }
 
 .titulo2 {
-  color: #1616f2;
+  color: #010118;
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
   border-style: double;
@@ -277,7 +277,7 @@
 }
 
 .titulo3 {
-  color: #1616f2;
+  color: #010118;
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
   border-style: double;
@@ -285,7 +285,7 @@
 }
 
 .titulo4 {
-  color: #1616f2;
+  color: #010118;
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
   border-style: double;
@@ -337,23 +337,24 @@
  */
 @media(max-width:720px) {
   .container {
+    padding-right: 65%;
     padding-right: 2%s;
     background-image:
-      background-size: cover;
+    background-size: cover;
     background-position: center;
     display: flex;
     border-width: 5px;
     border-style: ridge;
     Border-color: #100792;
-    align-items: center;
+    align-items: right;
     justify-content: center;
   }
 
   .logo {
     display: flex;
-    width: 130px;
+    width: 150px;
     height: 140px;
-    justify-content: center;
+    justify-content: left;
     border-width: 5px;
     border-style: ridge;
     Border-color: #100792;
@@ -365,19 +366,20 @@
   }
 
   .logo-mb {
-    display: flex;
+    display: grid;
     width: 100%;
   }
 
 
-  .empresa {
+  .empresa{
+    display: none;
     padding-right: 10%;
-    width: 75%;
+    width: none;
     position: relative;
     justify-content: right;
     margin: 1%;
     color: rgb(33, 184, 101);
-    font-size: 20px;
+    font-size: none;
     text-align: center;
     text-shadow: none;
   }
