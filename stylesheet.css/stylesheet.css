@@ -267,23 +267,25 @@
 
 .titulo1 {
   list-style: none;
-  color: #010118;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
-  background-position: center;
+  color: #0909f3;
+  background: url("../img/quem\ somos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 45% 50%;
   border-width: 8px;
   border-style: double;
-  Border-color: #100792;
+  Border-color: #f7f6fa;
 
 }
 
 .titulo2 {
   list-style: none;
-  color: #010118;
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+  color: #f0f0f5;
+  background: url("../img/missao.jpg");
+  background-position: 30% 35%;
   border-width: 8px;
   border-style: double;
-  Border-color: #100792;
+  Border-color: #fefeff;
 }
 
 .titulo3 {
@@ -305,22 +307,23 @@
 }
 
 .paragrafo {
-  color: #060afa;
+  color: #00010c;
   list-style: none;
 }
 
-.paragafo1{
-  color: #22fa06;
-  list-style: none;
-}
-.paragrafos2{
-  color:#060afa;
+.paragafo1 {
+  color: #00010c;
   list-style: none;
 }
 
-.paragrafos3{
+.paragrafos2 {
+  color: #00010c;
   list-style: none;
-  color:#0fc3f0;
+}
+
+.paragrafos3 {
+  list-style: none;
+  color: #00010c;
 }
 
 
@@ -369,11 +372,20 @@
 10 Tablets, por exemplo.
  */
 @media(max-width:720px) {
+  /*header*/
+  .cabeça {
+    display: grid;
+    max-width: 1300px;
+    width: auto;
+    height: 125px;
+    margin: auto;
+  }
+
   .container {
     padding-right: 65%;
     padding-right: 2%s;
     background-image:
-      background-size: cover;
+    background-size: cover;
     background-position: center;
     display: flex;
     border-width: 5px;
@@ -385,8 +397,8 @@
 
   .logo {
     display: flex;
-    width: 150px;
-    height: 140px;
+    width: 120px;
+    height: 110px;
     justify-content: left;
     border-width: 5px;
     border-style: ridge;
@@ -415,6 +427,87 @@
     font-size: none;
     text-align: center;
     text-shadow: none;
+  }
+  .conteiner-conteudo {
+    list-style: none;
+    color: #01010c;
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 0.85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+    background: rgb(27, 31, 231);
+    background: linear-gradient(90deg, rgba(27, 31, 231, 1) 0%, rgba(190, 242, 42, 1) 66%);
+  }
+  
+  .conteudo-texto {
+    justify-content: space-around;
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1em;
+  
+  }
+  
+  .titulo1 {
+    list-style: none;
+    color: #0707f0;
+    background: rgb(34, 193, 195);
+    background-image: url("../img/quem\ somos.jpg");
+    background-position: center;
+    border-width: 8px;
+    border-style: double;
+    Border-color: #e1e1e7;
+  
+  }
+  
+  .titulo2 {
+    list-style: none;
+    color: #010118;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+    border-width: 8px;
+    border-style: double;
+    Border-color: #100792;
+  }
+  
+  .titulo3 {
+    list-style: none;
+    color: #010118;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+    border-width: 8px;
+    border-style: double;
+    Border-color: #100792;
+  }
+  
+  .titulo4 {
+    list-style: none;
+    color: #010118;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+    border-width: 8px;
+    border-style: double;
+    Border-color: #100792;
+  }
+  
+  .paragrafo {
+    color: #00010c;
+    list-style: none;
+  }
+  
+  .paragafo1 {
+    color: #00010c;
+    list-style: none;
+  }
+  
+  .paragrafos2 {
+    color: #00010c;
+    list-style: none;
+  }
+  
+  .paragrafos3 {
+    list-style: none;
+    color: #00010c;
   }
 
   .gps {
