@@ -12,6 +12,13 @@
   margin: auto;
 }
 
+.corpoconteudo {
+  max-width: 1300px;
+  width: auto;
+  height: 215px;
+  margin: auto;
+}
+
 :root {
   --cor1: #060afa;
   --cor2: #1154cf;
@@ -236,6 +243,7 @@
 }
 
 .conteiner-conteudo {
+  list-style: none;
   color: #01010c;
   text-shadow: 2px -1px 1px rgba(0, 0, 0, 0.5);
   font-size: 1.5em;
@@ -258,6 +266,7 @@
 }
 
 .titulo1 {
+  list-style: none;
   color: #010118;
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
@@ -269,6 +278,7 @@
 }
 
 .titulo2 {
+  list-style: none;
   color: #010118;
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
@@ -277,6 +287,7 @@
 }
 
 .titulo3 {
+  list-style: none;
   color: #010118;
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
@@ -285,6 +296,7 @@
 }
 
 .titulo4 {
+  list-style: none;
   color: #010118;
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
   border-width: 8px;
@@ -292,7 +304,28 @@
   Border-color: #100792;
 }
 
+.paragrafo {
+  color: #060afa;
+  list-style: none;
+}
+
+.paragafo1{
+  color: #22fa06;
+  list-style: none;
+}
+.paragrafos2{
+  color:#060afa;
+  list-style: none;
+}
+
+.paragrafos3{
+  list-style: none;
+  color:#0fc3f0;
+}
+
+
 .rodape {
+  list-style: none;
   height: 300px;
   display: grid;
   background-repeat: no-repeat;
@@ -340,7 +373,7 @@
     padding-right: 65%;
     padding-right: 2%s;
     background-image:
-    background-size: cover;
+      background-size: cover;
     background-position: center;
     display: flex;
     border-width: 5px;
@@ -371,7 +404,7 @@
   }
 
 
-  .empresa{
+  .empresa {
     display: none;
     padding-right: 10%;
     width: none;
