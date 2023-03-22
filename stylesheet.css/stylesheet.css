@@ -269,29 +269,32 @@
   list-style: none;
   color: #0909f3;
   background: url("../img/quem\ somos.jpg");
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
-  background-position: 45% 50%;
+  background-position: center;
   border-width: 8px;
   border-style: double;
-  Border-color: #f7f6fa;
+  Border-color: #0f13f0;
 
 }
 
 .titulo2 {
   list-style: none;
-  color: #f0f0f5;
+  color: #0707e9;
   background: url("../img/missao.jpg");
-  background-position: 30% 35%;
+  background-size: contain;
+  background-repeat:no-repeat
+  background-position: 25% 4%;
   border-width: 8px;
   border-style: double;
-  Border-color: #fefeff;
+  Border-color: #0d0df3;
 }
 
 .titulo3 {
   list-style: none;
   color: #010118;
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+  background-image: url("../img/valores.jpg"); 
+  background-size: contain;
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
