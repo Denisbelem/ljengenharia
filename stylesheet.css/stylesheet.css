@@ -244,8 +244,8 @@
 
 .conteiner-conteudo {
   list-style: none;
-  color: #01010c;
-  text-shadow: 2px -1px 1px rgba(0, 0, 0, 0.5);
+  color: #ee1707;
+  text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
   font-size: 1.5em;
   display: flex;
   flex-direction: column;
@@ -266,7 +266,7 @@
 }
 
 .titulo1 {
-  height: 40vh;
+  height: 38vh;
   list-style: none;
   color: #0909f3;
   background: url("../img/quem\ somos.jpg");
@@ -293,10 +293,11 @@
 }
 
 .titulo3 {
+  height: 38vh;
   list-style: none;
-  color: #010118;
+  color: #2206c4;
   background-image: url("../img/valores.jpg"); 
-  background-size: contain;
+  background-size: 100% 100%;
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
@@ -312,8 +313,9 @@
 }
 
 .paragrafo {
-  color: #00010c;
+  color: #3fe60cab;
   list-style: none;
+  font-size: 1em;
 }
 
 .paragafo1 {
@@ -457,30 +459,38 @@
   }
   
   .titulo1 {
+    height: 38vh;
     list-style: none;
-    color: #0707f0;
-    background: rgb(34, 193, 195);
-    background-image: url("../img/quem\ somos.jpg");
-    background-position: center;
+    color: #0909f3;
+    background: url("../img/quem\ somos.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
     border-width: 8px;
     border-style: double;
-    Border-color: #e1e1e7;
+    Border-color: #0f13f0;
   
   }
   
   .titulo2 {
+    height: 38vh;
     list-style: none;
-    color: #010118;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+    color: #0707e9;
+    background: url("../img/missao.jpg");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position: 25% 4%;
     border-width: 8px;
     border-style: double;
-    Border-color: #100792;
+    Border-color: #0d0df3;
   }
   
   .titulo3 {
+    height: 38vh;
     list-style: none;
-    color: #010118;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+    color: #2206c4;
+    background-image: url("../img/valores.jpg"); 
+    background-size: 100% 100%;
     border-width: 8px;
     border-style: double;
     Border-color: #100792;
@@ -496,8 +506,9 @@
   }
   
   .paragrafo {
-    color: #00010c;
+    color: #3fe60cab;
     list-style: none;
+    font-size: 1em;
   }
   
   .paragafo1 {
