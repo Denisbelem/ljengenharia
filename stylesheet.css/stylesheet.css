@@ -266,12 +266,13 @@
 }
 
 .titulo1 {
+  height: 40vh;
   list-style: none;
   color: #0909f3;
   background: url("../img/quem\ somos.jpg");
   background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 100%;
+  background-position: center top;
   border-width: 8px;
   border-style: double;
   Border-color: #0f13f0;
@@ -279,11 +280,12 @@
 }
 
 .titulo2 {
+  height: 38vh;
   list-style: none;
   color: #0707e9;
   background: url("../img/missao.jpg");
-  background-size: contain;
-  background-repeat:no-repeat
+  background-size:100% 100%;
+  background-repeat:no-repeat;
   background-position: 25% 4%;
   border-width: 8px;
   border-style: double;
