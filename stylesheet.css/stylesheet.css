@@ -462,7 +462,8 @@
     height: 38vh;
     list-style: none;
     color: #0909f3;
-    background: url("../img/quem\ somos.jpg");
+    background: url();
+    filter: grayscale(90%);
     background-repeat:no-repeat;
     background-size: 100% 100%;
     background-position: center top;
@@ -477,6 +478,7 @@
     list-style: none;
     color: #0707e9;
     background: url("../img/missao.jpg");
+    filter:(100%);
     background-size:100% 100%;
     background-repeat:no-repeat;
     background-position: 25% 4%;
