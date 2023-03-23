@@ -244,7 +244,7 @@
 
 .conteiner-conteudo {
   list-style: none;
-  color: #ee1707;
+  color: #f8f0ef;
   text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
   font-size: 1.5em;
   display: flex;
@@ -281,8 +281,11 @@
   top: 0px;
   left: 0px;
   background-image: url("../img/quem\ somos.jpg");
-  background-size: contain;
-  filter: grayscale(70%) brightness(10%);
+  background-size: 100% 100%;
+  background-position: 100% 100% ;
+  filter:brightness(100%);
+  filter: grayscale(70%);
+
   z-index: -1;
 }
 
@@ -320,7 +323,7 @@
 }
 
 .paragrafo {
-  color: #15f04bab;
+  color: rgb(17, 2, 2);
   list-style: none;
   font-size: 1em;
 }
