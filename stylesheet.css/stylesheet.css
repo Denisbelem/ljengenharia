@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
+
 .cabeça {
   display: grid;
   max-width: 1300px;
   width: auto;
   height: 215px;
   margin: auto;
+  
 }
 
 .corpoconteudo {
@@ -34,14 +36,16 @@
 
 .container {
   background-image: url("../img/foto\ header.webp");
-  background-size: cover;
-  background-position: 5% 75%;
+  background-size: 100% 100%;
+  background-position:100% 100%;
   display: flex;
   border-width: 5px;
   border-style: ridge;
   Border-color: #100792;
   align-items: center;
   justify-content: center;
+  background-image:
+  
 }
 
 .logo {
@@ -63,7 +67,16 @@
 .logo-mb {
   display: none;
 }
+/*nome menu*/
+.meumenu{
+  font-size: 1em;
+  position:FIXED;
+  top: 6.1vh;
+  right: 5.9vw;
+  z-index: 2002;
+  color: #16fdde;
 
+}
 /* hamburger */
 .checkbox {
   display: none;
@@ -244,9 +257,9 @@
 
 .conteiner-conteudo {
   list-style: none;
-  color: #f8f0ef;
+  color: #f8f817;
   text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
-  font-size: 1.5em;
+  font-size: 1.4em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -262,8 +275,9 @@
   font-size: 1em;
 
 }
-
+/* INICIO DOS PARAGRAFOS*/
 .titulo1 {
+  display: grid;
   position: relative;
   height: 38vh;
   list-style: none;
@@ -272,78 +286,118 @@
   Border-color: #0f13f0;
 
 }
-
 .titulo1::before {
+  display: grid;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0px;
-  left: 0px;
   background-image: url("../img/quem\ somos.jpg");
   background-size: 100% 100%;
-  background-position: 100% 100% ;
-  filter:brightness(100%);
-  filter: grayscale(70%);
-
+  opacity: 0.8;
   z-index: -1;
 }
 
-.titulo2 {
+.titulo2{
+  position: relative;
   height: 38vh;
   list-style: none;
-  color: #0707e9;
-  background: url("../img/missao.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 25% 4%;
+  color: #f8f817;
   border-width: 8px;
   border-style: double;
   Border-color: #0d0df3;
 }
 
+.titulo2::before {
+  display: grid;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/missão.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
 .titulo3 {
+  position: relative;
   height: 38vh;
   list-style: none;
-  color: #2206c4;
-  background-image: url("../img/valores.jpg");
-  background-size: 100% 100%;
+  color: #f8f817;
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
+}
+
+.titulo3::before {
+  display: grid;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/valores.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  z-index: -1;
 }
 
 .titulo4 {
+  display: grid;
+  height: 38vh;
+  position: relative;
   list-style: none;
-  color: #010118;
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+  color: #f8f817;
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
 }
 
+.titulo4::before {
+  display: grid;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/projetos\ eletricos.png");
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
 .paragrafo {
-  color: rgb(17, 2, 2);
+  display: flex;
+  color: rgb(204, 218, 7);
   list-style: none;
-  font-size: 1em;
+  font-size: 1.4em;
+  justify-content: center;
 }
 
 .paragafo1 {
-  filter: none;
-  color: #00010c;
+  display: flex;
+  color: #f8f817;
   list-style: none;
+  font-size: 1.4em;
+  justify-content: center;
 }
 
 .paragrafos2 {
-  color: #00010c;
+  display: flex;
+  color: #f8f817;
   list-style: none;
+  font-size: 1.4em;
+  justify-content: center;
 }
 
 .paragrafos3 {
+  display: grid;
+  color: #f8f817;
   list-style: none;
-  color: #00010c;
+  font-size: 1.2em;
+  justify-content: center;
 }
-
 
 .rodape {
   list-style: none;
@@ -362,14 +416,20 @@
   justify-content: center;
 }
 
-.gps {
+.fotorodape{
+  display:flex;
+  width:400px;
+  height: 258px;
+}
+
+.gps{
   width: 400px;
   height: 250px;
   justify-content: center;
 }
 
 .menurodape {
-  color: azure;
+  color: rgb(3, 19, 19);
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -386,10 +446,21 @@
 
 
 /*
-1 Pra dispositivos que têm uma largura mínima de 720 pixels.
+1 Pra dispositivos que têm uma largura mínima de 1041 pixels.
 10 Tablets, por exemplo.
  */
-@media(max-width:720px) {
+@media(max-width:1041px){
+
+  .meumenu{
+    font-size: 1em;
+    position:FIXED;
+    top: 6.1vh;
+    right: 6.5vw;
+    z-index: 2002;
+    color: #16fdde;
+  
+  }
+
 
   /*header*/
   .cabeça {
@@ -450,7 +521,7 @@
 
   .conteiner-conteudo {
     list-style: none;
-    color: #01010c;
+    color: #eee022;
     text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
     font-size: 0.85em;
     display: flex;
@@ -458,8 +529,6 @@
     justify-content: flex-start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-between;
-    background: rgb(27, 31, 231);
-    background: linear-gradient(90deg, rgba(27, 31, 231, 1) 0%, rgba(190, 242, 42, 1) 66%);
   }
 
   .conteudo-texto {
@@ -467,69 +536,135 @@
     margin: 5px;
     padding: 0 10px;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
 
   }
 
   .titulo1 {
-    
-
-  }
-
-  .titulo2 {
+    display: grid;
+    position: relative;
     height: 38vh;
     list-style: none;
-    color: #0707e9;
-    background: url("../img/missao.jpg");
-    filter: (100%);
+    border-width: 8px;
+    border-style: double;
+    Border-color: #0f13f0;
+  
+  }
+  .titulo1::before {
+    display: grid;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/quem\ somos.jpg");
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: 25% 4%;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  
+  .titulo2{
+    position: relative;
+    height: 38vh;
+    list-style: none;
+    color: #f8f817;
     border-width: 8px;
     border-style: double;
     Border-color: #0d0df3;
   }
-
+  
+  .titulo2::before {
+    display: grid;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/missão.jpg");
+    background-size: 100% 100%;
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+  
   .titulo3 {
+    position: relative;
     height: 38vh;
     list-style: none;
-    color: #2206c4;
+    color: #f8f817;
+    border-width: 8px;
+    border-style: double;
+    Border-color: #100792;
+  }
+  
+  .titulo3::before {
+    display: grid;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/valores.jpg");
     background-size: 100% 100%;
-    border-width: 8px;
-    border-style: double;
-    Border-color: #100792;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    z-index: -1;
   }
-
+  
   .titulo4 {
+    display: grid;
+    height: 38vh;
+    position: relative;
     list-style: none;
-    color: #010118;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 203, 24, 0.8323704481792717) 46%);
+    color: #f8f817;
     border-width: 8px;
     border-style: double;
     Border-color: #100792;
   }
-
+  
+  .titulo4::before {
+    display: grid;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/projetos\ eletricos.png");
+    background-size: 100% 100%;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    z-index: -1;
+  }
+  
   .paragrafo {
-    color: #3fe60cab;
+    display: flex;
+    color: rgb(204, 218, 7);
     list-style: none;
-    font-size: 1em;
+    font-size: 1.4em;
+    justify-content: center;
   }
-
+  
   .paragafo1 {
-    color: #00010c;
+    display: flex;
+    color: #f8f817;
     list-style: none;
+    font-size: 1.4em;
+    justify-content: center;
   }
-
+  
   .paragrafos2 {
-    color: #00010c;
+    display: flex;
+    color: #f8f817;
     list-style: none;
+    font-size: 1.4em;
+    justify-content: center;
   }
-
+  
   .paragrafos3 {
+    display: grid;
+    color: #f8f817;
     list-style: none;
-    color: #00010c;
+    font-size: 1.2em;
+    justify-content: center;
   }
+  
+
+  
 
   .gps {
     width: 200px;
