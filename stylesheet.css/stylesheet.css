@@ -252,8 +252,6 @@
   justify-content: flex-start;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-between;
-  background: rgb(27, 31, 231);
-  background: linear-gradient(90deg, rgba(27, 31, 231, 1) 0%, rgba(190, 242, 42, 1) 66%);
 }
 
 .conteudo-texto {
@@ -266,17 +264,26 @@
 }
 
 .titulo1 {
+  position: relative;
   height: 38vh;
   list-style: none;
-  color: #0909f3;
-  background: url("../img/quem\ somos.jpg");
-  background-repeat:no-repeat;
-  background-size: 100% 100%;
-  background-position: center top;
   border-width: 8px;
   border-style: double;
   Border-color: #0f13f0;
 
+}
+
+.titulo1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: url("../img/quem\ somos.jpg");
+  background-size: contain;
+  filter: grayscale(70%) brightness(10%);
+  z-index: -1;
 }
 
 .titulo2 {
@@ -284,8 +291,8 @@
   list-style: none;
   color: #0707e9;
   background: url("../img/missao.jpg");
-  background-size:100% 100%;
-  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-position: 25% 4%;
   border-width: 8px;
   border-style: double;
@@ -296,7 +303,7 @@
   height: 38vh;
   list-style: none;
   color: #2206c4;
-  background-image: url("../img/valores.jpg"); 
+  background-image: url("../img/valores.jpg");
   background-size: 100% 100%;
   border-width: 8px;
   border-style: double;
@@ -313,12 +320,13 @@
 }
 
 .paragrafo {
-  color: #3fe60cab;
+  color: #15f04bab;
   list-style: none;
   font-size: 1em;
 }
 
 .paragafo1 {
+  filter: none;
   color: #00010c;
   list-style: none;
 }
@@ -379,6 +387,7 @@
 10 Tablets, por exemplo.
  */
 @media(max-width:720px) {
+
   /*header*/
   .cabeça {
     display: grid;
@@ -392,7 +401,7 @@
     padding-right: 65%;
     padding-right: 2%s;
     background-image:
-    background-size: cover;
+      background-size: cover;
     background-position: center;
     display: flex;
     border-width: 5px;
@@ -435,6 +444,7 @@
     text-align: center;
     text-shadow: none;
   }
+
   .conteiner-conteudo {
     list-style: none;
     color: #01010c;
@@ -448,56 +458,46 @@
     background: rgb(27, 31, 231);
     background: linear-gradient(90deg, rgba(27, 31, 231, 1) 0%, rgba(190, 242, 42, 1) 66%);
   }
-  
+
   .conteudo-texto {
     justify-content: space-around;
     margin: 5px;
     padding: 0 10px;
     text-align: center;
     font-size: 1em;
-  
+
   }
-  
+
   .titulo1 {
-    height: 38vh;
-    list-style: none;
-    color: #0909f3;
-    background: url();
-    filter: grayscale(90%);
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
-    background-position: center top;
-    border-width: 8px;
-    border-style: double;
-    Border-color: #0f13f0;
-  
+    
+
   }
-  
+
   .titulo2 {
     height: 38vh;
     list-style: none;
     color: #0707e9;
     background: url("../img/missao.jpg");
-    filter:(100%);
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+    filter: (100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: 25% 4%;
     border-width: 8px;
     border-style: double;
     Border-color: #0d0df3;
   }
-  
+
   .titulo3 {
     height: 38vh;
     list-style: none;
     color: #2206c4;
-    background-image: url("../img/valores.jpg"); 
+    background-image: url("../img/valores.jpg");
     background-size: 100% 100%;
     border-width: 8px;
     border-style: double;
     Border-color: #100792;
   }
-  
+
   .titulo4 {
     list-style: none;
     color: #010118;
@@ -506,23 +506,23 @@
     border-style: double;
     Border-color: #100792;
   }
-  
+
   .paragrafo {
     color: #3fe60cab;
     list-style: none;
     font-size: 1em;
   }
-  
+
   .paragafo1 {
     color: #00010c;
     list-style: none;
   }
-  
+
   .paragrafos2 {
     color: #00010c;
     list-style: none;
   }
-  
+
   .paragrafos3 {
     list-style: none;
     color: #00010c;
