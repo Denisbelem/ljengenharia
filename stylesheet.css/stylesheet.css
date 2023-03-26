@@ -285,7 +285,7 @@
   height: 100%;
   background-image: url("../img/quem\ somos.jpg");
   background-size: 100% 100%;
-  opacity: 0.8;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -308,6 +308,7 @@
   background-image: url("../img/missão.jpg");
   background-size: 100% 100%;
   filter: grayscale(100%);
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -330,7 +331,7 @@
   background-image: url("../img/valores.jpg");
   background-size: 100% 100%;
   filter: grayscale(100%);
-  opacity: 0.8;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -354,14 +355,14 @@
   background-image: url("../img/projetos\ eletricos.png");
   background-size: 100% 100%;
   filter: grayscale(100%);
-  opacity: 0.6;
+  opacity: 0.2;
   z-index: -1;
 }
 
 .paragrafo {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  color: #0a0a0a;
+  color: #f1ebeb;
   list-style: none;
   font-size: 1.4em;
   justify-content: center;
@@ -370,7 +371,7 @@
 .paragafo1 {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  color: #0a0a0a;
+  color: #f1ebeb;
   list-style: none;
   font-size: 1.4em;
   justify-content: center;
@@ -379,7 +380,7 @@
 .paragrafos2 {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  color: #0a0a0a;
+  color: #f1ebeb;
   list-style: none;
   font-size: 1.4em;
   justify-content: center;
@@ -388,7 +389,7 @@
 .paragrafos3 {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
-  color: #0a0a0a;
+  color: #f1ebeb;
   list-style: none;
   font-size: 1.2em;
   justify-content: center;
@@ -444,12 +445,77 @@
   Border-color: #100792;
 }
 
+/* inicio pagina projetos*/
+
+.projetos{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #239fe7;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr;
+  grid-gap:25px;
+
+}
+
+#semarituba1{
+     display: flex;
+     width:300px;
+     height:200px; 
+     background-color: #0f13f0;
+     border-radius:50%;
+     box-shadow: 30px -15px teal;
+}
+
+#semarituba2{
+     display: flex;
+     width:300px;
+     height:200px; 
+     background-color: #0f13f0;
+     border-radius:50%;
+
+}
+
+#semarituba3{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+
+#semarituba4{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+
+#semarituba5{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+#semarituba6{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+
 
 /*
-1 Pra dispositivos que têm uma largura mínima de 1041 pixels.
+1 Pra dispositivos que têm uma largura mínima de 1141 pixels.
 10 Tablets, por exemplo.
  */
-@media(max-width:1041px){
+@media(max-width:1141px){
  /*header*/
   .cabeça {
     display: grid;
@@ -531,7 +597,7 @@
   .titulo1 {
     display: grid;
     position: relative;
-    height: 18vh;
+    height: 23vh;
     list-style: none;
     border-width: 8px;
     border-style: double;
@@ -543,16 +609,16 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 17vh;
+    height: 21vh;
     background-image: url("../img/quem\ somos.jpg");
     background-size: 100% 100%;
-    opacity: 0.8;
+    opacity: 0.4;
     z-index: -1;
   }
   
   .titulo2{
     position: relative;
-    height: 15vh;
+    height: 23vh;
     list-style: none;
     Border-color: #100792;
     border-width: 8px;
@@ -574,7 +640,7 @@
   
   .titulo3 {
     position: relative;
-    height: 15vh;
+    height: 20vh;
     list-style: none;
     Border-color: #100792;
     border-width: 8px;
@@ -591,13 +657,13 @@
     background-image: url("../img/valores.jpg");
     background-size: 100% 100%;
     filter: grayscale(100%);
-    opacity: 0.8;
+    opacity: 0.4;
     z-index: -1;
   }
   
   .titulo4 {
     display: grid;
-    height: 15vh;
+    height: 23vh;
     position: relative;
     list-style: none;
     Border-color: #100792;
@@ -615,14 +681,14 @@
     background-image: url("../img/projetos\ eletricos.png");
     background-size: 100% 100%;
     filter: grayscale(100%);
-    opacity: 0.6;
+    opacity: 0.2;
     z-index: -1;
   }
   
   .paragrafo {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    color: #0a0a0a;
+    color: #f1ebeb;
     list-style: none;
     font-size: 1.4em;
     justify-content: center;
@@ -631,7 +697,7 @@
   .paragafo1 {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    color: #0a0a0a;
+    color: #f1ebeb;
     list-style: none;
     font-size: 1.4em;
     justify-content: center;
@@ -640,7 +706,7 @@
   .paragrafos2 {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    color: #0a0a0a;
+    color: #f1ebeb;
     list-style: none;
     font-size: 1.4em;
     justify-content: center;
@@ -649,7 +715,7 @@
   .paragrafos3 {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    color: #0a0a0a;
+    color: #f1ebeb;
     list-style: none;
     font-size: 1.2em;
     justify-content: center;
@@ -666,9 +732,508 @@
 }
 
 /*
+2 Pra dispositivos que têm uma largura mínima de 840px pixels.
+10 Tablets, por exemplo.
+ */
+  @media(max-width:840px){
+    /*header*/
+     .cabeça {
+       display: grid;
+       max-width: 1300px;
+       width: auto;
+       height: 125px;
+       margin: auto;
+     }
+   
+     .container {
+       padding-right: 65%;
+       padding-right: 2%s;
+       background-image:
+         background-size: cover;
+       background-position: center;
+       display: flex;
+       border-width: 5px;
+       border-style: ridge;
+       Border-color: #100792;
+       align-items: right;
+       justify-content: center;
+     }
+   
+     .logo {
+       display: flex;
+       width: 120px;
+       height: 100px;
+       justify-content: left;
+       border-width: 5px;
+       border-style: ridge;
+       Border-color: #100792;
+   
+     }
+   
+     .logo-pc {
+       display: none;
+     }
+   
+     .logo-mb {
+       display: grid;
+       width: 100%;
+     }
+   
+   
+     .empresa {
+       display: none;
+       padding-right: 10%;
+       width: none;
+       position: relative;
+       justify-content: right;
+       margin: 1%;
+       color: rgb(33, 184, 101);
+       font-size: none;
+       text-align: center;
+       text-shadow: none;
+     }
+   
+     .conteiner-conteudo {
+       list-style: none;
+       Border-color: #100792;
+       text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
+       font-size: 0.85em;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       justify-content: space-between;
+     }
+   
+     .conteudo-texto {
+       justify-content: space-around;
+       margin: 5px;
+       padding: 0 10px;
+       text-align: center;
+       font-size: 1em;
+   
+     }
+   
+     .titulo1 {
+       display: grid;
+       position: relative;
+       height: 29vh;
+       list-style: none;
+       border-width: 8px;
+       border-style: double;
+       Border-color: #0f13f0;
+     
+     }
+     .titulo1::before {
+       display: grid;
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 27vh;
+       background-image: url("../img/quem\ somos.jpg");
+       background-size: 100% 100%;
+       opacity: 0.4;
+       z-index: -1;
+     }
+     
+     .titulo2{
+       position: relative;
+       height: 23vh;
+       list-style: none;
+       Border-color: #100792;
+       border-width: 8px;
+       border-style: double;
+       Border-color: #0d0df3;
+     }
+     
+     .titulo2::before {
+       display: grid;
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       background-image: url("../img/missão.jpg");
+       background-size: 100% 100%;
+       filter: grayscale(100%);
+       z-index: -1;
+     }
+     
+     .titulo3 {
+       position: relative;
+       height: 20vh;
+       list-style: none;
+       Border-color: #100792;
+       border-width: 8px;
+       border-style: double;
+       Border-color: #100792;
+     }
+     
+     .titulo3::before {
+       display: grid;
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       background-image: url("../img/valores.jpg");
+       background-size: 100% 100%;
+       filter: grayscale(100%);
+       opacity: 0.4;
+       z-index: -1;
+     }
+     
+     .titulo4 {
+       display: grid;
+       height: 23vh;
+       position: relative;
+       list-style: none;
+       Border-color: #100792;
+       border-width: 8px;
+       border-style: double;
+       Border-color: #100792;
+     }
+     
+     .titulo4::before {
+       display: grid;
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       background-image: url("../img/projetos\ eletricos.png");
+       background-size: 100% 100%;
+       filter: grayscale(100%);
+       opacity: 0.2;
+       z-index: -1;
+     }
+     
+     .paragrafo {
+       font-family: Arial, Helvetica, sans-serif;
+       display: flex;
+       color: #f1ebeb;
+       list-style: none;
+       font-size: 1.4em;
+       justify-content: center;
+     }
+     
+     .paragafo1 {
+       font-family: Arial, Helvetica, sans-serif;
+       display: flex;
+       color: #f1ebeb;
+       list-style: none;
+       font-size: 1.4em;
+       justify-content: center;
+     }
+     
+     .paragrafos2 {
+       font-family: Arial, Helvetica, sans-serif;
+       display: flex;
+       color: #f1ebeb;
+       list-style: none;
+       font-size: 1.4em;
+       justify-content: center;
+     }
+     
+     .paragrafos3 {
+       font-family: Arial, Helvetica, sans-serif;
+       display: grid;
+       color: #f1ebeb;
+       list-style: none;
+       font-size: 1.2em;
+       justify-content: center;
+     }
+     
+   
+     
+   
+     .gps {
+       width: 200px;
+       height: 100px;
+       justify-content: center;
+     }
+   }
+
+  /*
 2 Pra dispositivos que têm uma largura mínima de 450px pixels.
 10 Tablets, por exemplo.
  */
  @media(max-width:450px){
+  /*header*/
+   .cabeça {
+     display: grid;
+     max-width: 1300px;
+     width: auto;
+     height: 125px;
+     margin: auto;
+   }
+ 
+   .container {
+     padding-right: 65%;
+     padding-right: 2%s;
+     background-image:
+       background-size: cover;
+     background-position: center;
+     display: flex;
+     border-width: 5px;
+     border-style: ridge;
+     Border-color: #100792;
+     align-items: right;
+     justify-content: center;
+   }
+ 
+   .logo {
+     display: flex;
+     width: 120px;
+     height: 100px;
+     justify-content: left;
+     border-width: 5px;
+     border-style: ridge;
+     Border-color: #100792;
+ 
+   }
+ 
+   .logo-pc {
+     display: none;
+   }
+ 
+   .logo-mb {
+     display: grid;
+     width: 100%;
+   }
+ 
+ 
+   .empresa {
+     display: none;
+     padding-right: 10%;
+     width: none;
+     position: relative;
+     justify-content: right;
+     margin: 1%;
+     color: rgb(33, 184, 101);
+     font-size: none;
+     text-align: center;
+     text-shadow: none;
+   }
+ 
+   .conteiner-conteudo {
+     list-style: none;
+     Border-color: #100792;
+     text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
+     font-size: 0.85em;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     justify-content: space-between;
+   }
+ 
+   .conteudo-texto {
+     justify-content: space-around;
+     margin: 5px;
+     padding: 0 10px;
+     text-align: center;
+     font-size: 1em;
+ 
+   }
+ 
+   .titulo1 {
+     display: grid;
+     position: relative;
+     height: 42vh;
+     list-style: none;
+     border-width: 8px;
+     border-style: double;
+     Border-color: #0f13f0;
+   
+   }
+   .titulo1::before {
+     display: grid;
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 40vh;
+     background-image: url("../img/quem\ somos.jpg");
+     background-size: 100% 100%;
+     opacity: 0.4;
+     z-index: -1;
+   }
+   
+   .titulo2{
+     position: relative;
+     height: 29vh;
+     list-style: none;
+     Border-color: #100792;
+     border-width: 8px;
+     border-style: double;
+     Border-color: #0d0df3;
+   }
+   
+   .titulo2::before {
+     display: grid;
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image: url("../img/missão.jpg");
+     background-size: 100% 100%;
+     filter: grayscale(100%);
+     z-index: -1;
+   }
+   
+   .titulo3 {
+     position: relative;
+     height: 23vh;
+     list-style: none;
+     Border-color: #100792;
+     border-width: 8px;
+     border-style: double;
+     Border-color: #100792;
+   }
+   
+   .titulo3::before {
+     display: grid;
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image: url("../img/valores.jpg");
+     background-size: 100% 100%;
+     filter: grayscale(100%);
+     opacity: 0.4;
+     z-index: -1;
+   }
+   
+   .titulo4 {
+     display: grid;
+     height: 23vh;
+     position: relative;
+     list-style: none;
+     Border-color: #100792;
+     border-width: 8px;
+     border-style: double;
+     Border-color: #100792;
+   }
+   
+   .titulo4::before {
+     display: grid;
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image: url("../img/projetos\ eletricos.png");
+     background-size: 100% 100%;
+     filter: grayscale(100%);
+     opacity: 0.2;
+     z-index: -1;
+   }
+   
+   .paragrafo {
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     color: #f1ebeb;
+     list-style: none;
+     font-size: 1.4em;
+     justify-content: center;
+   }
+   
+   .paragafo1 {
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     color: #f1ebeb;
+     list-style: none;
+     font-size: 1.4em;
+     justify-content: center;
+   }
+   
+   .paragrafos2 {
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     color: #f1ebeb;
+     list-style: none;
+     font-size: 1.4em;
+     justify-content: center;
+   }
+   
+   .paragrafos3 {
+     font-family: Arial, Helvetica, sans-serif;
+     display: grid;
+     color: #f1ebeb;
+     list-style: none;
+     font-size: 1.2em;
+     justify-content: center;
+   }
 
+   /* inicio pagina projetos*/
+
+.projetos{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #239fe7;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr;
+  grid-gap:25px;
+
+}
+
+#semarituba1{
+     display: flex;
+     width:300px;
+     height:200px; 
+     background-color: #0f13f0;
+     border-radius:50%;
+     box-shadow: 30px -15px teal;
+}
+
+#semarituba2{
+     display: flex;
+     width:300px;
+     height:200px; 
+     background-color: #0f13f0;
+     border-radius:50%;
+
+}
+
+#semarituba3{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+
+#semarituba4{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+
+#semarituba5{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+#semarituba6{
+  display: flex;
+  width:300px;
+  height:200px; 
+  background-color: #0f13f0;
+  border-radius:50%;
+
+}
+   
+ 
+   
+ 
+   .gps {
+     width: 200px;
+     height: 100px;
+     justify-content: center;
+   }
+ }
+   
  
