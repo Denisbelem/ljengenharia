@@ -23,19 +23,6 @@
   
 }
 
-:root {
-  --cor1: #060afa;
-  --cor2: #1154cf;
-  --cor3: #239fe7;
-  --cor4: #0fc3f0;
-  --cor5: #16160e;
-  --cor6: #bbbbd8;
-  --cor7: #469b61;
-  --cor8: #2295c2;
-  --cor9: #1b4855;
-  --cor10: #3b3c3e;
-}
-
 .container {
   background-image: url("../img/foto\ header.webp");
   background-size: 100% 100%;
@@ -49,14 +36,26 @@
   
 }
 
+.empresalogo{
+    display: flex;
+    background-size: auto;
+    width: 200px;
+    height: 190px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
   display: flex;
-  width: 200px;
+  width: 186px;
   height: 180px;
   justify-content: center;
-  border-width: 5px;
-  border-style: ridge;
-  Border-color: #100792;
+  z-index: 1;
 
 }
 
@@ -68,6 +67,28 @@
 .logo-mb {
   display: none;
 }
+
+.empresalogo::before{
+  content: "";
+            background-image: conic-gradient(#ff2a0e 20deg,
+                    transparent 120deg);
+            width: 150%;
+            height: 150%;
+            position: absolute;
+            animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+
+
+  
 /*nome menu*/
 
 /* hamburger */
@@ -448,13 +469,16 @@
 /* inicio pagina projetos*/
 
 .projetos{
-  font-family: Arial, Helvetica, sans-serif;
-  color: #239fe7;
   display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f7f7f7;
   justify-content: center;
   grid-template-columns: 2fr 2fr;
   grid-gap:25px;
+}
 
+.textosprojetos1{
+   padding-left: 130px;
 }
 
 #semarituba1{
@@ -463,24 +487,49 @@
      height:200px; 
      background-color: #0f13f0;
      border-radius:50%;
-     box-shadow: 30px -15px teal;
+     box-shadow: 16px 14px 20px #0000008c;
+     border-radius: 10px;
+     position: relative;
+     overflow: hidden;
+}
+
+#quadra1{
+  padding-top: 10px;
+  display: flex;
+  font-size: 1.30em;
+  padding-left: 100px;
+  color: #fafbfc;
 }
 
 #semarituba2{
-     display: flex;
-     width:300px;
-     height:200px; 
-     background-color: #0f13f0;
-     border-radius:50%;
-
-}
-
-#semarituba3{
   display: flex;
   width:300px;
   height:200px; 
   background-color: #0f13f0;
   border-radius:50%;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#semarituba3{
+     display: flex;
+     width:300px;
+     height:200px; 
+     background-color: #0f13f0;
+     border-radius:50%;
+     box-shadow: 16px 14px 20px #0000008c;
+     border-radius: 10px;
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
 }
 
@@ -490,23 +539,44 @@
   height:200px; 
   background-color: #0f13f0;
   border-radius:50%;
-
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #semarituba5{
-  display: flex;
-  width:300px;
-  height:200px; 
-  background-color: #0f13f0;
-  border-radius:50%;
+     display: flex;
+     width:300px;
+     height:200px; 
+     background-color: #0f13f0;
+     border-radius:50%;
+     box-shadow: 16px 14px 20px #0000008c;
+     border-radius: 10px;
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
 }
+
 #semarituba6{
   display: flex;
   width:300px;
   height:200px; 
   background-color: #0f13f0;
   border-radius:50%;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -539,15 +609,25 @@
     justify-content: center;
   }
 
+  .empresalogo{
+    display: flex;
+    background-size: auto;
+    width: 128px;
+    height: 108px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   .logo {
     display: flex;
-    width: 120px;
+    width: 118px;
     height: 100px;
     justify-content: left;
-    border-width: 5px;
-    border-style: ridge;
-    Border-color: #100792;
-
   }
 
   .logo-pc {
@@ -557,6 +637,25 @@
   .logo-mb {
     display: grid;
     width: 100%;
+  }
+
+  .empresalogo::before{
+    content: "";
+              background-image: conic-gradient(#70f517 20deg,
+                      transparent 120deg);
+              width: 150%;
+              height: 150%;
+              position: absolute;
+              animation: rotate 2s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+  
+    100% {
+        transform: rotate(-360deg);
+    }
   }
 
 
@@ -1164,8 +1263,8 @@
    /* inicio pagina projetos*/
 
 .projetos{
-  font-family: Arial, Helvetica, sans-serif;
-  color: #239fe7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f1ebeb;
   display: grid;
   justify-content: center;
   grid-template-columns: 2fr;
@@ -1173,11 +1272,16 @@
 
 }
 
+.textosprojetos1{
+  color: #b0e225;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #0f13f0;
+}
+
 #semarituba1{
      display: flex;
      width:300px;
      height:200px; 
-     background-color: #0f13f0;
      border-radius:50%;
      box-shadow: 30px -15px teal;
 }
