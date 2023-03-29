@@ -476,7 +476,7 @@
   grid-template-columns: 2fr 2fr;
   grid-gap:25px;
 }
-
+/* area quadra 1*/
 .textosprojetos1{
    padding-left: 130px;
 }
@@ -485,7 +485,6 @@
      display: flex;
      width:300px;
      height:200px; 
-     background-color: #0f13f0;
      border-radius:50%;
      box-shadow: 16px 14px 20px #0000008c;
      border-radius: 10px;
@@ -493,13 +492,28 @@
      overflow: hidden;
 }
 
+/* area quadra 2*/
+.textosprojetos2{
+  padding-left: 130px;
+}
+
+/*rodape foto quadra 2*/
+#quadra2{
+  padding-top: 8px;
+  display: flex;
+  font-size: 1.30em;
+  padding-left: 130px;
+  color: #fafbfc;
+}
+/*rodape foto quadra 1*/
 #quadra1{
-  padding-top: 10px;
+  padding-top: 8px;
   display: flex;
   font-size: 1.30em;
   padding-left: 100px;
   color: #fafbfc;
 }
+
 
 #semarituba2{
   display: flex;
