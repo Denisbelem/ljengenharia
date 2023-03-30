@@ -475,12 +475,15 @@
   justify-content: center;
   grid-template-columns: 2fr 2fr;
   grid-gap:25px;
+  border-width: 8px;
+  border-style: double;
+  Border-color: #100792;
 }
 /* area quadra 1*/
 .textosprojetos1{
    padding-left: 130px;
 }
-
+/* FOTO QUADRA1 */
 #semarituba1{
      display: flex;
      width:300px;
@@ -492,29 +495,28 @@
      overflow: hidden;
 }
 
-/* area quadra 2*/
-.textosprojetos2{
-  padding-left: 130px;
+.videosjl{
+   width: 450px;
+   height: 400px;
+   background-color: #0d0df3;
 }
 
-/*rodape foto quadra 2*/
-#quadra2{
-  padding-top: 8px;
-  display: flex;
-  font-size: 1.30em;
-  padding-left: 130px;
-  color: #fafbfc;
-}
 /*rodape foto quadra 1*/
 #quadra1{
   padding-top: 8px;
-  display: flex;
   font-size: 1.30em;
   padding-left: 100px;
   color: #fafbfc;
 }
 
 
+/* area quadra 2*/
+.textosprojetos2{
+  display:grid;
+  padding-left: 130px;
+}
+
+/*FOTO QUADRA2 */
 #semarituba2{
   display: flex;
   width:300px;
@@ -528,9 +530,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
+/*rodape foto quadra 2*/
+#quadra2{
+  padding-top: 8px;
+  display: flex;
+  font-size: 1.30em;
+  padding-left: 130px;
+  color: #fafbfc;
+}
+
+/* AREA   QUADRO 3 */
+.textosprojetos3{
+  display:grid;
+  padding-left: 130px;
+}
+/* foto quadro 3*/
 #semarituba3{
      display: flex;
      width:300px;
@@ -544,9 +560,14 @@
      display: flex;
      justify-content: center;
      align-items: center;
-
+}
+/* area 4 */
+.textosprojetos4{
+  display:grid;
+  padding-left: 130px;
 }
 
+/* foto 4 */
 #semarituba4{
   display: flex;
   width:300px;
@@ -561,7 +582,12 @@
   justify-content: center;
   align-items: center;
 }
-
+/* area 5 */
+.textosprojetos5{
+  display:grid;
+  padding-left: 130px;
+}
+/* foto 5 */
 #semarituba5{
      display: flex;
      width:300px;
@@ -575,9 +601,13 @@
      display: flex;
      justify-content: center;
      align-items: center;
-
 }
-
+/* area foto 6 */
+.textosprojetos6{
+  display:grid;
+  padding-left: 130px;
+}
+/* foto 6 */
 #semarituba6{
   display: flex;
   width:300px;
