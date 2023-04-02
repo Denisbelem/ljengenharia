@@ -20,7 +20,6 @@
   height: 215px;
   margin: auto;
   background-color: dimgray;
-  
 }
 
 .container {
@@ -75,7 +74,7 @@
             width: 150%;
             height: 150%;
             position: absolute;
-            animation: rotate 2s linear infinite;
+            animation: rotate 4s linear infinite;
 }
 @keyframes rotate {
   0% {
@@ -416,69 +415,35 @@
   justify-content: center;
 }
 
-.rodape {
-  list-style: none;
-  height: 300px;
-  display: grid;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  justify-content: center;
-}
-
-
-.textorodape{
-  text-decoration: underline;
-  padding-top: 1%;
-  font-size: 1.0em;
-  color: rgb(30, 11, 202);
-  justify-content: center;
-}
-
-.fotoradape{
-  display:flex;
-  justify-content: center;
-  width:300px;
-  height: 200px;
-}
-
-.gps{
-  width: 400px;
-  height: 250px;
-  justify-content: center;
-}
-
-.menurodape {
-  color: rgb(3, 19, 19);
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  height: 25px;
-}
-
-/* papel de parede rodape*/
-.todorodape {
-  background-image:url(../img/fundo\ rodape.jpg);
-  background-size: 100% 100%;
-  border-width: 8px;
-  border-style: double;
-  Border-color: #100792;
-}
-
 /* inicio pagina projetos*/
 
 .projetos{
   display: grid;
   font-family: Arial, Helvetica, sans-serif;
   color: #f7f7f7;
+  position: relative;
   justify-content: center;
   grid-template-columns: 2fr 2fr;
   grid-gap:25px;
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
+  padding-top: 15px;
 }
+
+.projetos::before {
+  display: grid;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/foto\ corpo\ pagprojetos.png");
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+
 /* area quadra 1*/
 .textosprojetos1{
    padding-left: 130px;
@@ -489,16 +454,10 @@
      width:300px;
      height:200px; 
      border-radius:50%;
-     box-shadow: 16px 14px 20px #0000008c;
+     box-shadow:  14px 11px #0000008c;
      border-radius: 10px;
      position: relative;
      overflow: hidden;
-}
-
-.videosjl{
-   width: 450px;
-   height: 400px;
-   background-color: #0d0df3;
 }
 
 /*rodape foto quadra 1*/
@@ -523,7 +482,7 @@
   height:200px; 
   background-color: #0f13f0;
   border-radius:50%;
-  box-shadow: 16px 14px 20px #0000008c;
+  box-shadow:  14px 11px #0000008c;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -553,7 +512,7 @@
      height:200px; 
      background-color: #0f13f0;
      border-radius:50%;
-     box-shadow: 16px 14px 20px #0000008c;
+     box-shadow:  14px 20px #0000008c;
      border-radius: 10px;
      position: relative;
      overflow: hidden;
@@ -574,7 +533,7 @@
   height:200px; 
   background-color: #0f13f0;
   border-radius:50%;
-  box-shadow: 16px 14px 20px #0000008c;
+  box-shadow:  14px 20px #0000008c;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -594,7 +553,7 @@
      height:200px; 
      background-color: #0f13f0;
      border-radius:50%;
-     box-shadow: 16px 14px 20px #0000008c;
+     box-shadow:  14px 1px #0000008c;
      border-radius: 10px;
      position: relative;
      overflow: hidden;
@@ -614,16 +573,130 @@
   height:200px; 
   background-color: #0f13f0;
   border-radius:50%;
-  box-shadow: 16px 14px 20px #0000008c;
+  box-shadow:  14px 1px #0000008c;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* seção videos */
 
+.videosjl{
+  display: grid;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  border-width: 8px;
+  border-style: double;
+  Border-color: #100792;
 }
 
+.videosjl::before{
+  display: grid;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/se\ marituba\ 2.jpeg");
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.textovideo{
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  color: #f1ebeb;
+  justify-content: center;
+}
+
+
+#video{
+  width: 400px;
+  height: 200px;
+}
+
+/*INICIO FOOTER*/
+
+.rodape {
+  list-style: none;
+  height: 300px;
+  display: grid;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  justify-content: center;
+}
+
+
+.textorodape{
+  text-decoration: underline;
+  padding-top: 1%;
+  font-size: 1.0em;
+  color: rgb(30, 11, 202);
+  justify-content: center;
+}
+
+.fotorodape{
+    left: 80px;
+    display: flex;
+    width: 190px;
+    height: 185px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotodope{
+  display: flex;
+  width: 95%;
+  height: 95%;
+  justify-content: center;
+  z-index: 1;
+}
+.fotorodape::before{
+  content: "";
+            background-image: conic-gradient(#ff2a0e 20deg,
+                    transparent 120deg);
+            width: 150%;
+            height: 150%;
+            position: absolute;
+            animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+
+.menurodape {
+  color: rgb(3, 19, 19);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 25px;
+}
+
+/* papel de parede rodape*/
+.todorodape {
+  background-image:url(../img/fundo\ rodape.jpg);
+  background-size: 100% 100%;
+  border-width: 8px;
+  border-style: double;
+  Border-color: #100792;
+}
 
 /*
 1 Pra dispositivos que têm uma largura mínima de 1141 pixels.
