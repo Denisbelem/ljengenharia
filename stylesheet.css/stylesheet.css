@@ -714,10 +714,10 @@
 }
 
 /*
-1 Pra dispositivos que têm uma largura mínima de 1141 pixels.
+1 Pra dispositivos que têm uma largura mínima de 800 pixels.
 10 Tablets, por exemplo.
  */
-@media(max-width:1024px){
+@media(max-width:800px){
   * {
     margin: 0;
     padding: 0;
@@ -727,15 +727,15 @@
   
   .cabeça {
     display: grid;
-    max-width: 1300px;
+    max-width: 800px;
     width: auto;
-    height: 215px;
+    height: 220px;
     margin: auto;
     
   }
   
   .corpoconteudo {
-    max-width: 1300px;
+    max-width: 800px;
     width: auto;
     height: 215px;
     margin: auto;
@@ -758,8 +758,8 @@
   .empresalogo{
       display: flex;
       background-size: auto;
-      width: 300px;
-      height: 190px;
+      width: 130px;
+      height: 108px;
       box-shadow: 16px 14px 20px #0000008c;
       border-radius: 10px;
       position: relative;
@@ -990,7 +990,7 @@
     list-style: none;
     color: #0d0df3;
     text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1302,7 +1302,6 @@
     align-items: center;
   }
   /* seção videos */
-  
   .videosjl{
     display: grid;
     position: relative;
