@@ -789,7 +789,7 @@
   
   .empresalogo::before{
     content: "";
-              background-image: conic-gradient(#ff2a0e 20deg,
+              background-image: conic-gradient(#f52b08 20deg,
                       transparent 120deg);
               width: 150%;
               height: 150%;
@@ -1010,7 +1010,7 @@
   .titulo1 {
     display: grid;
     position: relative;
-    height: 42vh;
+    height: 30vh;
     list-style: none;
     border-width: 8px;
     border-style: double;
