@@ -1010,7 +1010,7 @@
   .titulo1 {
     display: grid;
     position: relative;
-    height: 38vh;
+    height: 40vh;
     list-style: none;
     border-width: 8px;
     border-style: double;
