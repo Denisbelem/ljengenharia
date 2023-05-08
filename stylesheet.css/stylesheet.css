@@ -758,7 +758,7 @@
   .empresalogo{
       display: flex;
       background-size: auto;
-      width: 130px;
+      width: 100px;
       height: 108px;
       box-shadow: 16px 14px 20px #0000008c;
       border-radius: 10px;
@@ -771,8 +771,8 @@
   
   .logo {
     display: flex;
-    width: 186px;
-    height: 180px;
+    width: 92px;
+    height: 102px;
     justify-content: center;
     z-index: 1;
   
@@ -965,7 +965,7 @@
     justify-content: right;
     margin: 1%;
     color: rgb(244, 247, 95);
-    font-size: 2em;
+    font-size: 1.60em;
     font-family: stencil, fantasy;
     font-weight: bold;
     text-align: center;
@@ -988,7 +988,6 @@
   
   .conteiner-conteudo {
     list-style: none;
-    color: #0d0df3;
     text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
     font-size: 1em;
     display: flex;
@@ -1007,14 +1006,15 @@
   
   }
   /* INICIO DOS PARAGRAFOS*/
+
   .titulo1 {
     display: grid;
     position: relative;
-    height: 30vh;
+    height: 29vh;
     list-style: none;
     border-width: 8px;
     border-style: double;
-    Border-color: #0f13f0;
+    Border-color: #100792;
   
   }
   .titulo1::before {
@@ -1031,12 +1031,12 @@
   
   .titulo2{
     position: relative;
-    height: 38vh;
+    height: 22vh;
     list-style: none;
     color: #0d0df3;
     border-width: 8px;
     border-style: double;
-    Border-color: #0d0df3;
+    Border-color: #100792;
   }
   
   .titulo2::before {
@@ -1054,7 +1054,7 @@
   
   .titulo3 {
     position: relative;
-    height: 38vh;
+    height: 20vh;
     list-style: none;
     color: #0d0df3;
     border-width: 8px;
@@ -1077,7 +1077,7 @@
   
   .titulo4 {
     display: grid;
-    height: 38vh;
+    height: 20vh;
     position: relative;
     list-style: none;
     color: #0d0df3;
@@ -1098,6 +1098,7 @@
     opacity: 0.2;
     z-index: -1;
   }
+  
   
   .paragrafo {
     font-family: Arial, Helvetica, sans-serif;
@@ -1131,7 +1132,7 @@
     display: grid;
     color: #f1ebeb;
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     justify-content: center;
   }
   
@@ -1140,7 +1141,8 @@
   .projetos{
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    color: #f7f7f7;
+    font-size: 1.20;
+    color: #f3eded;
     position: relative;
     justify-content: center;
     grid-template-columns: 2fr 2fr;
@@ -1171,8 +1173,8 @@
   /* FOTO QUADRA1 */
   #semarituba1{
        display: flex;
-       width:300px;
-       height:200px; 
+       width:250px;
+       width:226px;
        border-radius:50%;
        box-shadow:  14px 11px #0000008c;
        border-radius: 10px;
@@ -1198,7 +1200,7 @@
   /*FOTO QUADRA2 */
   #semarituba2{
     display: flex;
-    width:300px;
+    width:226px;
     height:200px; 
     background-color: #0f13f0;
     border-radius:50%;
@@ -1215,9 +1217,9 @@
   #quadra2{
     padding-top: 8px;
     display: flex;
-    font-size: 1.30em;
+    font-size: 1.10em;
     padding-left: 130px;
-    color: #fafbfc;
+    color: #f4fdef;
   }
   
   /* AREA   QUADRO 3 */
@@ -1228,7 +1230,7 @@
   /* foto quadro 3*/
   #semarituba3{
        display: flex;
-       width:300px;
+       width:226px;
        height:200px; 
        background-color: #0f13f0;
        border-radius:50%;
@@ -1249,7 +1251,7 @@
   /* foto 4 */
   #semarituba4{
     display: flex;
-    width:300px;
+    width:226px;
     height:200px; 
     background-color: #0f13f0;
     border-radius:50%;
@@ -1269,7 +1271,7 @@
   /* foto 5 */
   #semarituba5{
        display: flex;
-       width:300px;
+       width:226px;
        height:200px; 
        background-color: #0f13f0;
        border-radius:50%;
@@ -1289,8 +1291,8 @@
   /* foto 6 */
   #semarituba6{
     display: flex;
-    width:300px;
-    height:200px; 
+    width:226px;
+    height:200px;  
     background-color: #0f13f0;
     border-radius:50%;
     box-shadow:  14px 1px #0000008c;
@@ -1434,10 +1436,10 @@
 }
 
 /*
-2 Pra dispositivos que têm uma largura mínima de 840px pixels.
+2 Pra dispositivos que têm uma largura mínima de 300px pixels.
 10 Tablets, por exemplo.
  */
-  @media(max-width:840px){
+  @media(max-width:300px){
     /*header*/
      .cabeça {
        display: grid;
@@ -1519,7 +1521,7 @@
      .titulo1 {
        display: grid;
        position: relative;
-       height: 29vh;
+       height: 28vh;
        list-style: none;
        border-width: 8px;
        border-style: double;
