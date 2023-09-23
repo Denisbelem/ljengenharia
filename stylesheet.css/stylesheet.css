@@ -621,6 +621,13 @@
 
 /*INICIO FOOTER*/
 
+.mapa{
+  display: grid;
+  justify-content: center;
+  padding-top:1%;
+}
+
+
 .rodape {
   list-style: none;
   height: 300px;
@@ -711,6 +718,11 @@
   border-width: 8px;
   border-style: double;
   Border-color: #100792;
+}
+
+.gps{
+  display:flex;
+  justify-content: center;
 }
 
 /*
@@ -1341,6 +1353,12 @@
   }
   
   /*INICIO FOOTER*/
+
+  .mapa{
+    display: grid;
+    justify-content: center;
+    padding-top:1%;
+  }
   
   .rodape {
     list-style: none;
@@ -2065,6 +2083,12 @@
       }
       
       /*INICIO FOOTER*/
+
+      .mapa{
+        display: grid;
+        justify-content: center;
+        padding-top:1%;
+      }
       
       .rodape {
         list-style: none;
@@ -2787,6 +2811,12 @@
   }
   
   /*INICIO FOOTER*/
+
+  .mapa{
+    display: grid;
+    justify-content: center;
+    padding-top:1%;
+  }
   
   .rodape {
     list-style: none;
@@ -3510,7 +3540,13 @@
       }
       
       /*INICIO FOOTER*/
-      
+
+      .mapa{
+        display: grid;
+        justify-content: center;
+        padding-top:1%;
+      }
+
       .rodape {
         list-style: none;
         height: 300px;
@@ -4368,6 +4404,12 @@
   }
   
   /*INICIO FOOTER*/
+
+  .mapa{
+    display: grid;
+    justify-content: center;
+    padding-top:1%;
+  }
   
   .rodape {
     list-style: none;
@@ -5469,6 +5511,12 @@
   }
   
   /*INICIO FOOTER*/
+
+  .mapa{
+    display: grid;
+    justify-content: center;
+    padding-top:1%;
+  }
   
   .rodape {
     list-style: none;
@@ -5566,5 +5614,5 @@
 }
 
 
-}
+
 
